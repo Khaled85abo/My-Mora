@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/736e4ed1a9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="public/dist/main.css">
     <title>Kundvagn</title>
+    <link rel="stylesheet" href="kundvagn.css">
+    <script src="kundvagn.js" defer></script>
 </head>
+
 <body>
-  
+
     <ul class="navbarmain">
         <a href="#"><img class="header__menu__logo" id="header__logo" src="public/bilder/logogul.png" alt=""></a>
         <li class="header__links" id="header__links__home"><a href="index.html#header">Hem</a></li>
@@ -42,21 +46,85 @@
             </div>
         </li>
     </ul>
-    
+
     <div class="product_invoice_div">
         <section class="product_section">
-            <div class="product_div">
-                <a href=""><i class="fas fa-times" id="exit-sign"></i></a>
-                <button class="product_btn"></button>
-                <div class="porduct_describtion">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit temporibus ducimus corrupti! Temporibus obcaecati voluptas doloremque eligendi esse nostrum dicta asperiores animi voluptatum officia id, quos quis, doloribus reiciendis
-                        nihil cu harum, excepturi laborum blanditiis quam hic?</p>
-
-                </div>
+            <div class="Cardmain">
+                <ul class="cards">
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="public/bilder/design.jpg" class="card_image"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Design</h2><br>
+                                <p class="card_text"> Vi kan hjälpa er med design <br> •Bakgrund <br> •Färger <br> •Style <br>•Responsive
+                                </p>
+                                <h3 class="price_text">3500 kr</h3>
+                                <button class="btn card_btn ta-bort" id="btn_design" type="submit">Ta bort</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="public/bilder/ecommerce.jpg" class="card_image"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Ecommerce</h2><br>
+                                <p class="card_text">Vi hjälper er med Online Marketing <br>•Social Media <br> •Online shop <br> •Nå flera kunder</p>
+                                <h3 class="price_text">8000 kr</h3>
+                                <button class="btn card_btn ta-bort" id="btn_ecommerece" type="submit">Ta bort</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="public/bilder/small-agencies-vs-big-agencies.jpg" class="card_image"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Take Care</h2><br>
+                                <p class="card_text">Hjälp för båda småa och stora företag<br> •Uppdates <br>• Nya funktioner <br> •Changes </p>
+                                <h3 class="price_text">1500 kr</h3>
+                                <button class="btn card_btn ta-bort" id="btn_small_big" type="submit">Ta bort</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="public/bilder/problem.jpg" class="card_image"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Problem lösningar</h2><br>
+                                <p class="card_text">Vi löser problem <br> •Problem med koder <br> •Problem med gamla lösningar <br> •Problem med uppdates</p>
+                                <h3 class="price_text">1800 kr</h3>
+                                <button class="btn card_btn ta-bort" id="btn_problem" type="submit">Ta bort</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="public/bilder/host.jpg" class="card_image"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Host</h2><br>
+                                <p class="card_text">Vi hostar webbsidor<br> •Vi har snabba servers <br> •Modern servers <br> •Modern servers<br> •Server service/uppdates </p>
+                                <h3 class="price_text">800 kr</h3>
+                                <button class="btn card_btn ta-bort" id="btn_host" type="submit">Ta bort</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="public/bilder/unik.jpg" class="card_image"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Be Unique</h2><br>
+                                <p class="card_text">Stick ut från mängden <br> •Egen design just för er <br> •Vi bygger egen style för er <br> •Vi bygger egen style för er <br> •Be UNIQUE, WIN more </p>
+                                <h3 class="price_text">2000 kr</h3>
+                                <button class="btn card_btn ta-bort" id="btn_unik" type="submit">Ta bort</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
-
         </section>
+
+
+
         <aside class="invoice_aside">
             <h3 class="total_belopp">Totalbelopp:
                 <sapn id="total_belopp_amount">35000</sapn>kr</h3>
@@ -64,18 +132,22 @@
             <table>
                 <tr>
                     <th>Tjänst</th>
-                    <th>Moms</th>
-                    <th>Belopp</th>
+                    <th>Belopp ink.moms</th>
+                    <th>Moms 25%</th>
+                    <th class="table-input-header">Antal</th>
                 </tr>
                 <tr>
-<td>Websida</td>
-                    <td>5000</td>
-                    <td>20000</td>
+                    <td>Take care</td>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td class="table-input"><input type="number"></td>
                 </tr>
                 <tr>
-                    <td>W.förvaltning (standard, 6 mån)</td>
-                    <td>2100</td>
+                    <td>W.förvaltning</td>
                     <td>6900</td>
+                    <td>2100</td>
+                    <td class="table-input"><input type="number"></td>
+
                 </tr>
                 <tr>
                     <td class="total total_total">Total:</td>
@@ -83,49 +155,57 @@
                     <td class="total total_price">26900</td>
                 </tr>
             </table>
-            <div class="information_field">
-                <input type="text" id="referens" placeholder="skriv er referens!" class="input-field" required>
+            <div>
+                <div class="information_field">
+                    <div class="referens_field position_relative">
+                        <p class="referens_p alert inactive-alert">!</p>
+                        <input type="text" id="referens" placeholder="skriv er referens!" class="input-field" required>
+                    </div>
 
-                <input type="text" id="company_name" placeholder="skriv företagsnamnet!" class="input-field" required>
+                    <div class="company_name_field position_relative">
+                        <p class="company_name_p alert inactive-alert">!</p>
+                        <input type="text" id="company_name" placeholder="skriv företagsnamnet!" class="input-field" required>
+                    </div>
 
-                <input type="text" id="company_adress" placeholder="skriv företagsadress!" class="input-field" required>
+                    <div class="company_adress_field position_relative">
+                        <p class="company_adress_p alert inactive-alert">!</p>
+                        <input type="text" id="company_adress" placeholder="skriv företagsadress!" class="input-field" required>
+                    </div>
 
+                </div>
             </div>
             <div class="terms">
+                <p class="checkbox_p alert inactive-alert">!</p>
                 <input type="checkbox" id="checkbox"> Jag godkänner alla <a href="vilkor.html" target="_blank">vilkor</a>
             </div>
-            <div class="buttondiv"><button class="faktura_button">
-              <a href="faktura.html">Faktura</a></button></div>
-
-            <div id="testDiv"></div>
+            <div class="buttondiv">
+                <button class="faktura_button" type="submit">Faktura</button>
+            </div>
 
         </aside>
     </div>
 
 
-<!--Footer-->
-  <footer class="footer-distributed">
- 
-    <div class="footer-left">
-        <img src="public/bilder/logo_gul.png">
+    <!--Footer-->
+    <footer class="footer-distributed">
 
-      <p class="footer-links">
-        <a href="index.html#home">• Hem</a>
-        |
-        <a href="#omoss">• Om oss</a>
-        |
-        <a href="index.html#tjänster">• Tjänster</a>
-        |
-        <a href="index.html#kontakt">• Kontakt</a>
-      </p>
+        <div class="footer-left">
+            <img src="public/bilder/logo_gul.png">
 
-      <p class="footer-company-name"> © Copy Right</p>
-    </div>
+            <p class="footer-links">
+                <a href="index.html#home">• Hem</a> |
+                <a href="#omoss">• Om oss</a> |
+                <a href="index.html#tjänster">• Tjänster</a> |
+                <a href="index.html#kontakt">• Kontakt</a>
+            </p>
 
-    <div class="footer-center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span>
+            <p class="footer-company-name"> © Copy Right</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>
         <a href="https://drive.google.com/open?id=1URoOVgFhTwjYvLQN8IHy7lKJaxKsADV2&usp=sharing";
           target="_blank" rel="noopener">• Adress: Tulegatan 41, 113 53 Stockholm</a> 
         </p>
@@ -142,17 +222,16 @@
     </div>
     <div class="footer-right">
       <p class="footer-company-about" id="omoss">
-        <span>• Om Oss</span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. A quaerat, laborum minus debitis repudiandae temporibus a cupiditate assumenda rerum error suscipit nemo?
-        Sectetur adipisicing elit.</p>
-      <div class="footer-icons">
-        <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></i></a>
-        <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
-        <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
-        <a href="http://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-  </footer>
-</section> 
+        <span>• Om Oss</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. A quaerat, laborum minus debitis repudiandae temporibus a cupiditate assumenda rerum error suscipit nemo? Sectetur adipisicing elit.</p>
+                <div class="footer-icons">
+                    <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></i></a>
+                    <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="http://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    </footer>
+    </section>
 </body>
+
 </html>
